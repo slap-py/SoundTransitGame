@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
+h1{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: 'Lato', sans-serif;   
+}
+h3{
+    font-family: 'Lato', sans-serif;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+
 #map{
     height:90%;
     width:50%;
@@ -14,6 +27,20 @@
     background-color: #a6acbf;
     border-radius:8px;
     outline: 2px solid #595d69;
-    width:30%;
     padding-left:0.25%;
+    padding-right:2%;
+    display:inline-block;
+}
+#notifications-bar{
+    background-color: #a6acbf;
+    border-radius:8px;
+    outline: 2px solid #595d69;
+    padding-left:0.25%;
+    padding-right:2%;
+    display:inline-block;
+}
+.notification{
+    background-color: #cfd3e3;
+    border-radius:8px;
+    padding-left:2%;
 }

@@ -10,6 +10,11 @@ function getPopulation(lat,lng,radius){
     request.send();
 
 }
+
+var stopMarker = L.icon({
+    iconUrl: '/static/3448339.png',
+    iconSize: [64,64]
+})
 function onMapClick(e){
     popup = L.popup
     count = getPopulation(e.latlng.lat,e.latlng.lng,1000)
@@ -24,4 +29,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 map.on('click',onMapClick)
+
+var stopMarker = L.marker([47.60920418132215, -122.33571870996371],{icon:stopMarker})
+stopMarker.bindPopup("4th & Union")
+stopMarker.addTo(map)
+
 
