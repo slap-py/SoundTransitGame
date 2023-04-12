@@ -1,0 +1,16 @@
+#map{
+    height:90%;
+    width:50%;
+    float:right;
+    border-radius:8px;
+    outline: 2px solid #228B22;
+    outline-offset: -1px;
+}
+
+#sidebar{
+    background-color: #a6acbf;
+    border-radius:8px;
+    outline: 2px solid #595d69;
+    width:30%;
+    padding-left:0.25%;
+}

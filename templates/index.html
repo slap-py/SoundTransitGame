@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'index.css')}}"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+    
+    
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+<script src="{{url_for('static', filename = 'index.js')}}"></script>
+
+<h1>STGame Placeholder</h1>
+
+<div id="sidebar">
+    <h2 id="timeframe">Time: 19:36:13 4/11/23</h2>
+    <h2 id="budget">Budget: $143,563,183</h2>
+    <h2 id="ridership">Riders: 13,842 riders</h2>
+    <h2 id="performance">Timing Performance: 86%</h2>
+    <h2 id="utilization">Vehicle Utilization: 98%</h2>
+    <h2 id="rider-satisfaction">Rider Satisfaction: 78%</h2>
+    <h2 id="driver-satisfaction">Driver Satisfaction: 63%</h2>
+</div>
