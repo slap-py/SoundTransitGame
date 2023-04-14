@@ -10,15 +10,16 @@
 
 <body>
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a class="active" href="#home">TBD</a>
+        <a href="#news">TBD</a>
+        <a href="#contact">TBD</a>
+        <a href="#about">TBD</a>
     </div>
     <div id="depots" class="rounded-box">
         <div id="depots-title" class="title-section">
-        <h3 class="title-section-title">Depots</h3>
-        <button class="purchase-button">Purchase</button>
+            <h3 class="titles-count">Depots (4)</h3>
+            <button class="purchase-button">Purchase</button>
+            <input type="text" class="minimalistic-input" placeholder="Search" id="depots-search">
         </div>
         <div id="depots-body" class="body-section">
             <div class="depot-category">
@@ -47,6 +48,51 @@
             </div>
         </div>
     </div>
+    <div id="stops" class="rounded-box">
+        <div id="stops-title" class="title-section">
+            <h3 class="titles-count">Stops (9)</h3>
+            <button class="purchase-button">Purchase</button>
+            <input type="text" class="minimalistic-input" placeholder="Search" id="stops-search">
+        </div>
+        <div id="stops-body" class="body-section">
+            <div class="stop-category">
+                <p>3rd & Seneca</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+            <div class="stop-category">
+                <p>1st & Stewart</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+            <div class="stop-category">
+                <p>1st & Union</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+            <div class="stop-category">
+                <p>Pine & Alaskan</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+            <div class="stop-category">
+                <p>23rd & Yesler</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+            <div class="stop-category">
+                <p>Weller & Boren</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+            <div class="stop-category">
+                <p>Westlake & Mercer</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+            <div class="stop-category">
+                <p>Thomas & Terry</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+            <div class="stop-category">
+                <p>6th & King</p>
+                <button class="details-button-stops">Details</button>
+            </div>
+        </div>
+    </div>
     
     <div id="map"></div>
     
@@ -55,4 +101,6 @@
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
     crossorigin=""></script>
-<script src="{{url_for('static', filename = 'index.js')}}"></script>
+<script src="{{url_for('static', filename = 'mapping.js')}}"></script>
+<script src="{{url_for('static', filename = 'eventListeners.js')}}"></script>
+<script src="{{url_for('static', filename = 'population.js')}}"></script>
