@@ -49,6 +49,9 @@ createStop_visual('Westlake & Mercer', [47.62448035843266, -122.33807076006781],
 createStop_visual('Thomas & Terry', [47.62102033511989, -122.33706372894517],['17','41','48','52'])
 createStop_visual('6th & King', [47.59830258846859, -122.3261657656141],['17','211'])
 
+L.circle([47.59830258846859, -122.3261657656141],{radius:100}).addTo(map)
+L.circle([47.5991734625748, -122.32640201444418], {radius: 100}).addTo(map);
+
 
 map.addLayer(depotGroup)
 map.addLayer(stopGroup)

@@ -10,18 +10,6 @@ document.getElementById('depots-search').addEventListener('keyup',function(e){
     })
 })
 
-items1 = document.querySelectorAll('.stop-category')
-document.getElementById('stops-search').addEventListener('keyup',function(e){
-    items1.forEach(function(item){
-        text = item.textContent.toLowerCase()
-        if (text.includes(e.target.value.toLowerCase())){
-            item.style.display = 'flex';
-        } else{
-            item.style.display='none'
-        }
-    })
-})
-
 
 map.on('zoomend',function(){
     if(map.getZoom() <11){

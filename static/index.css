@@ -68,9 +68,16 @@ p{
 #depots {
   left: 5;
   padding: 3px;
-  width: 30%;
-  max-height: 40%;
+  width: 25%;
+  max-height: 90%;
 }
+#statistics{
+  padding: 3px;
+  /*width: 20%;*/
+  max-height: 70%;
+  margin-left:0.5%;
+}
+
 #stops{
   margin-left: 10px;
   padding: 3px;
@@ -241,7 +248,7 @@ p{
   font-size: 16px;
   padding: 3px;
   outline: none;
-  width: 15%;
+  width: 25%;
 }
 
 .minimalistic-input:focus {
@@ -250,4 +257,18 @@ p{
 
 #stops-search{
   width:25%
+}
+
+#buttons-body{
+  flex-direction:vertical;
+}
+#buttons{
+  padding:3px;
+}
+#notifications{
+  padding:3px;
+  max-width:10%;
+  overflow-x: wrap;
+  max-height:80%;
+  overflow-y: auto;
 }
